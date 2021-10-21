@@ -1,46 +1,23 @@
 /*
 ====================================================================================================================================================================
-                                                    Start Courses Page
+                                                    Start Contact Page
 ====================================================================================================================================================================
 */
 
-.course {
-    width: 400px;
-    height: 500px;
-    background: white;
-    border: 1px solid transparent;
+form {
+    display: inline-block;
     position: absolute;
     top: 300px;
-    left: 400px;
+    left: 500px;
 }
 
-.course2 {
-    width: 400px;
-    height: 500px;
-    background: white;
-    border: 1px solid transparent;
-    position: absolute;
-    top: 300px;
-    left: 850px;
-}
-
-.course3 {
-    width: 400px;
-    height: 500px;
-    background: white;
-    border: 1px solid transparent;
-    position: absolute;
-    top: 300px;
-    left: 1300px;
-}
-
-h6 {
-	font-size: 1em;
+input {
+    display: inline-block;
 }
 
 /*
 ====================================================================================================================================================================
-                                                    End Courses Page
+                                                    End Contact Page
 ====================================================================================================================================================================
 */
 
@@ -55,7 +32,7 @@ footer {
     height: 80px;
     background: #172035;
     position: absolute;
-    top: 900px !important;
+    top: 900px!important;
     left: 0;
 }
 
@@ -65,7 +42,6 @@ p#footer {
     margin-top: 32px;
     font-size: 1em;
 }
-
 
 /*
 ====================================================================================================================================================================

@@ -1,14 +1,17 @@
 /*
 ====================================================================================================================================================================
-                                                    Start Slideshow Properties
+                                                    Start Slideshow Properties 
 ====================================================================================================================================================================
 */
+
 section#content {
     color: white;
     position: absolute;
     top: 400px;
     left: 600px;
+
 }
+
 img#slide {
     width: 100%;
     height: auto;
@@ -16,17 +19,18 @@ img#slide {
 
 /*
 ====================================================================================================================================================================
-                                                    End Slideshow Properties
+                                                    End Slideshow Properties 
 ====================================================================================================================================================================
 */
 
 
 /*
 ====================================================================================================================================================================
-                                                    Start Featured Courses Properties
+                                                    Start Featured Courses Properties 
 ====================================================================================================================================================================
 */
-.course {
+
+div.course {
     width: 400px;
     height: 500px;
     background: white;
@@ -36,7 +40,7 @@ img#slide {
     left: 400px;
 }
 
-.course2 {
+div.course2 {
     width: 400px;
     height: 500px;
     background: white;
@@ -46,7 +50,7 @@ img#slide {
     left: 850px;
 }
 
-.course3 {
+div.course3 {
     width: 400px;
     height: 500px;
     background: white;
@@ -57,20 +61,22 @@ img#slide {
 }
 
 h6 {
-    font-size: 1em;
+	font-size: 1em;
 }
+
 /*
 ====================================================================================================================================================================
-                                                    End Featured Courses Properties
+                                                    End Featured Courses Properties 
 ====================================================================================================================================================================
 */
 
 
 /*
 ====================================================================================================================================================================
-                                                    Start About Section Properties
+                                                    Start About Section Properties 
 ====================================================================================================================================================================
 */
+
 section#about {
     width: 100%;
     height: 509px;
@@ -79,12 +85,13 @@ section#about {
     top: 1800px;
     left: 0;
 }
-.about {
-    color: white;
-    text-align: center;
+
+div.about {
+	color: white;
+	text-align: center;
 }
 
-.students {
+div.students {
     width: 300px;
     height: 200px;
     background: black;
@@ -95,7 +102,7 @@ section#about {
     left: 250px;
 }
 
-.reviews {
+div.reviews {
     width: 300px;
     height: 200px;
     background: black;
@@ -104,10 +111,9 @@ section#about {
     position: absolute;
     top: 212px;
     left: 600px;
-}
+} 
 
-
-.courses {
+div.courses {
     width: 300px;
     height: 200px;
     background: black;
@@ -118,7 +124,7 @@ section#about {
     left: 951px;
 }
 
-.content {
+div.content {
     width: 300px;
     height: 200px;
     background: black;
@@ -140,7 +146,8 @@ section#about {
                                                     Start Learn Tech Section Properties 
 ====================================================================================================================================================================
 */
-.learntechnow {
+
+div.learntechnow {
     width: 400px;
     height: 500px;
     background: white;
@@ -150,7 +157,7 @@ section#about {
     left: 400px;
 }
 
-.learntechpodcast {
+div.learntechpodcast {
     width: 400px;
     height: 500px;
     background: white;
@@ -160,7 +167,7 @@ section#about {
     left: 850px;
 }
 
-.learntechblog {
+div.learntechblog {
     width: 400px;
     height: 500px;
     background: white;
@@ -180,7 +187,7 @@ section#about {
 
 /*
 ====================================================================================================================================================================
-                                                    End Learn Tech Section Properties
+                                                    End Learn Tech Section Properties 
 ====================================================================================================================================================================
 */
 
@@ -199,7 +206,7 @@ footer {
     left: 0;
 }
 
-#footer {
+p#footer {
     text-align: center;
     color: white;
     margin-top: 32px;
@@ -211,3 +218,4 @@ footer {
                                                     End Footer
 ====================================================================================================================================================================
 */
+
