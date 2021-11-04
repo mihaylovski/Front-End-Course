@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> JavaScript | Basics</title>
+    <script>console.log("script 01");</script>
+    
+ <script type="text/javascript" src="basics.js">  </script>
+  </head>
+  <body>
+
+    <!--JS Output-->
+ <strong>JS Output</strong>
+
+  <p id="demo"></p>
+  <script>
+    document.getElementById('demo').innerHTML = 10 + 39;
+    document.write(10 + 20);
+  </script>
+  <br>
+  <button type="button" onclick="document.write(5 + 20);" name="button">Click me</button>
+  <script>
+    //window.alert(10 + 20);
+  </script>
+  <script>
+    console.log("This is console.log")
+  </script>
+  <button type="button" onclick="window.print();" name="button">Print this page</button>
+  <br>
+  
+  <!-- 01. Start JavaScript Here -->
+
+ 
+  <!-- 02. JS tatements-->
+    <strong>JS tatements</strong>
+    <p id="total"></p>
+    <script type="text/javascript">
+      var x, y, z;
+      x = 5;
+      y = 6;
+      z = x + y;
+
+      document.getElementById('total').innerHTML = 'The value of z is ' + z + '.';
+    </script>
+<!-- 03. Js Syntax
+    01. JS Literals 
+      Numbers are written with or without decimals
+      Strings are text, written within double or single quotes:
+          'Strings'"Strings"
+    JS Variables 
+      Variables are used to store data values
+       Js uses the var keyword to declare variables
+       An equal sign is used to assine values to Variables
+        Example:
+          var x, y, z;
+              x = 5;
+              y = 6;
+              z = x + y; 
+     03. Aritmetic Operator (+ - * /) Example: (5 + 10)
+     04. Assigment Operator (=)
+     05. JS Expressions: is a combination of values, variables and operators, which computes to a value.
+     This computation is called evaluation.-->
+    <br>
+
+<!--Let Method-->
+    <strong>Let Method</strong>
+    <p id="let"></p>
+    <script>
+      console.log("Loading after the HTMl code")
+    </script>
+    <!-- Math-->
+    <p id="math"></p>
+    <script>
+      document.getElementById('math').innerHTML = Math.PI
+    </script>
+  <br>
+
+<!--Random-->
+    <strong>Random</strong>
+    <span id="random"></span><span> - Random Number</span>
+    <br>
+    <span id="random_2"></span><span> - Random Number between 0 and 19</span>
+    <script>
+      document.getElementById('random').innerHTML = Math.random();
+      document.getElementById('random_2').innerHTML = Math.floor(Math.random() * 20);
+    </script>
+<br>
+<br>
+
+ <!--Switch-->
+    <strong>Switch</strong>
+    <p id="switch"></p>
+    <script>
+      var day;
+      switch(new Date().getDay()){ 
+        case 0:
+        day = 'Sunday';
+        break
+        case 1:
+        day = 'Monday';
+        break
+        case 2:
+        day = 'Thuesday';
+        break
+        case 3:
+        day = 'Wednesday';
+        break
+        case 4:
+        day = 'Thurday';
+        break
+        case 5:
+        day = 'Friday';
+        break
+        case 6:
+        day = 'Saturday';
+      }
+      document.getElementById('switch').innerHTML = 'Today is ' + day;
+    </script>
+  <br>
+
+ <!--Loop For-->
+ <!--   
+    <p id="loop_for"></p>
+    <script>
+            
+      var cars = ['Toyota','Ford','Hilux', 'Toyota Surf']
+      var text = '';
+      var i;
+      for ( i=0; i < cars.length; i++) {
+          text += cars[i] + '<br>';
+      }
+      document.getElementById('loop_for').innerHTML = text;
+    </script>
+-->
+
+ <!--Loop While-->
+    <strong>Loop While</strong>
+    <p id="while"></p>
+    <script>
+      var text = '';
+      var i = 0;
+      while (i < 11) {
+          text += '<br> The number is ' + i;
+          i++
+      }
+      document.getElementById('while').innerHTML = text;
+    </script>
+  <br>
+  
+ <!--Break-->
+    <strong>Break</strong>
+    <p id="break"></p>
+    <script>
+      var text = '';
+      var i = 0;
+      for (i = 0; i < 3; i++) {
+        if (i === 3) { break; }
+          text += '<br> The number is ' + i;
+      }
+      document.getElementById('break').innerHTML = text;
+    </script>
+  <br>
+
+ <!--Continue--> 
+    <strong>Continue</strong>
+    <p id="continue"></p>
+    <script>
+      var text = '';
+      var i = 0;
+      for (i = 0; i < 10; i++) {
+        if (i === 10) { continue; }
+          text += '<br> The number is ' + i;
+      }
+      document.getElementById('continue').innerHTML = text;
+    </script>
+  <br>
+
+  
+ <!--RegExp--> 
+  <strong>RegExp</strong>
+    <p id="continue"></p>
+    <script>
+      var text = '';
+      var i = 0;
+      for (i = 0; i < 10; i++) {
+        if (i === 10) { continue; }
+          text += '<br> The number is ' + i;
+      }
+      document.getElementById('continue').innerHTML = text;
+    </script>
+    <br>
+  <button onclick='myFunction()'>Press Here</button>
+  <p id="replace">Please visit my website LearnTech+</p>
+  <script>
+    function myFunction() {
+      var str = document.getElementById('replace').innerHTML;
+      var txt = str.replace('LearnTech+', 'Moogle');
+      document.getElementById('replace').innerHTML = txt;
+    }
+  </script>
+
+<!--Arrow Function-->
+  <p id="function"></p>
+  <script>
+    var hello;
+
+    hello = () => {
+      return 'Hello Moogle'
+    }
+    document.getElementById('function').innerHTML = hello();
+  </script> 
+
+
+<!--Clasess-->
+  <p id="classess"></p>
+  <script>
+    class Car {
+      constructor(name, model, year){
+        this.name = name;
+        this.model = model;
+        this.year = year;
+      }
+    }
+    myCar = new Car('Toyota', 'Hilux', '2007');
+    document.getElementById('classess').innerHTML = myCar.name + ' ' +myCar.model + ' ' + myCar.year;
+  </script> 
+
+
+
+  </body>
+</html>

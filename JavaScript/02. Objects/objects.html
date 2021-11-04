@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> JavaScript | Objects</title>
+  </head>
+  <body>
+<!--Object Methods-->
+    <p id="object_methods"></p>
+  
+    <script>
+      const person = {
+        firstName: 'John',
+        lastName: 'Doe',
+        id: 1234,
+        fullName : function() {
+          return this.firstName + ' ' + this.lastName;
+        }
+      };
+      document.getElementById('object_methods').innerHTML = person.fullName();
+    </script>
+  <!-- Start JavaScript Here -->
+  <script type="text/javascript" src="objects.js">
+
+  </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> JavaScript | Classes</title>
+  </head>
+  <body>
+    <p id="classes"></p>
+    <script>
+      class CarA {
+        constructor (name, year) {
+          this.name = name;
+          this.year = year;
+        }
+        age() {
+          let date = new Date();
+          return date.getFullYear() - this.year;
+        }
+      }
+      let myCarA = new CarA('Toyota', 2010)
+      console.log(myCarA)
+      document.getElementById('classes').innerHTML = 'My car is ' + myCarA.age() + 'years old.';
+    </script>
+    <br>
+
+    <p id="class_2"></p>
+    <script>
+      class Car {
+        constructor(brand) {
+          this.carname = brand;
+        }
+        present() {
+          return 'I have a ' + this.carname;
+        }
+      }
+      class Model extends Car {
+        constructor(brand, mod) {
+          super(brand);
+          this.model = mod;
+        }
+        show() {
+          return this.present() + ' that is a ' + this.model
+        }
+      }
+
+      let myCar = new Model('Toyota', '4Runner');
+      document.getElementById('class_2').innerHTML = myCar.show();
+    </script>
+
+  <!-- Start JavaScript Here -->
+  <script type="text/javascript" src="classes.js">
+
+  </script>
+  </body>
+</html>
