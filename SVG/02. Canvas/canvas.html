@@ -6,6 +6,73 @@
 
 </head>
 <body>
+<!-- Drawing-->
+  <canvas id="myCanvas" width="500" height="500" style="border: 1px solid black;" style='display:inline-block;'></canvas>
+  <script>
+    
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#FF0000';
+    ctx.fillRect (150, 0, 150, 392);
+    </script>
+
+<!-- Coordinates-->
+<canvas id="myCanvas2" width="500" height="500" style="border: 1px solid black;" style='display:inline-block;'></canvas>
+<script>
+  var canvas = document.getElementById('myCanvas2');
+  var ctx = canvas.getContext('2d');
+  ctx.moveTo(120, 50);
+  ctx.lineTo(200, 200);
+  ctx.stroke();
+  </script>
+
+<!-- Gradients-->
+  <canvas id="myCanvas3" width="500" height="500" style="border: 1px solid black;" style='display:inline-block;'></canvas>
+  <script>
+    var c = document.getElementById("myCanvas3");
+    var ctx = c.getContext("2d");
+    
+    var grd = ctx.createLinearGradient(0, 150, 250, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+    
+    
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+    </script>
+
+<!-- Text-->
+  <canvas id="myCanvas4" width="500" height="500" style="border: 1px solid black;" style='display:inline-block;'></canvas>
+  <script>
+    var canvas = document.getElementById("myCanvas4");
+    var ctx = canvas.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Hello World", 10, 50);
+  </script>
+
+<!-- Text-->
+  <canvas id="myCanvas4" width="500" height="500" style="border: 1px solid black;" style='display:inline-block;'></canvas>
+  <script>
+    window.onload = function() {
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      var img = document.getElementById("scream");
+      ctx.drawImage(img, 10, 10);
+    };
+  </script>
+
+<!-- Text-->
+  <img src="https://www.w3schools.com/graphics/pic_the_scream.jpg" alt="scream" id="scream" style="display: none;" >
+  <canvas id="myCanvas5" width="500" height="500" style="border: 1px solid black;" style='display:inline-block;' width="240" height="297"></canvas>
+  <script>
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas5");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("scream");
+      ctx.drawImage(img, 10, 10);
+    };
+  </script>
+  
 
 
 </body>
